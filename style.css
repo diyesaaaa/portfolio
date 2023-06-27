@@ -305,6 +305,10 @@ article.active {
   line-height: 90vh;
 }
 
+.splash h1{
+  font-size:2vw;
+}
+
 .splash.display-none{
   position: fixed;
   opacity: 0;
@@ -1379,6 +1383,8 @@ textarea.form-input::-webkit-resizer {
   .blog-banner-box {
     height: auto;
   }
+
+  
 }
 
 /* responsive screen larger than 580px */
@@ -1393,6 +1399,7 @@ textarea.form-input::-webkit-resizer {
     --fs-7: 15px;
     --fs-8: 12px;
   }
+  
 
   .sidebar,
   article {
@@ -1418,6 +1425,7 @@ textarea.form-input::-webkit-resizer {
     font-size: 18px;
   }
 
+  
   main {
     margin-top: 60px;
     margin-bottom: 100px;
@@ -1495,6 +1503,8 @@ textarea.form-input::-webkit-resizer {
   .about .article-title {
     margin-bottom: 20px;
   }
+
+  
 
   .about-text {
     margin-bottom: 40px;
