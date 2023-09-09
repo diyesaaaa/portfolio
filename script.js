@@ -246,6 +246,27 @@ modalCloseBtnSocialMedia.addEventListener("click", SocialMediaFunc);
 overlaySocialMedia.addEventListener("click", SocialMediaFunc);
 
 
+//LogoPage
+const LogoItem = document.querySelectorAll("[logo-data]");
+const modalContainerLogo = document.querySelector("[logo-modal-container]");
+const modalCloseBtnLogo = document.querySelector("[logo-modal-close-btn]");
+const overlayLogo = document.querySelector("[logo-overlay]");
+
+const LogoFunc = () => {
+  modalContainerLogo.classList.toggle("active");
+  overlayLogo.classList.toggle("active");
+};
+
+for (let i = 0; i < LogoItem.length; i++) {
+  LogoItem[i].addEventListener("click", () => {
+    LogoFunc();
+  });
+}
+
+modalCloseBtnLogo.addEventListener("click", LogoFunc);
+overlayLogo.addEventListener("click", LogoFunc);
+
+
 
 
 
