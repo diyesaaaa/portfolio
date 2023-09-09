@@ -225,6 +225,27 @@ modalCloseBtnTHDSLanding.addEventListener("click", THDSLandingModalFunc);
 overlayTHDSLanding.addEventListener("click", THDSLandingModalFunc);
 
 
+//Social Media Page
+const SocialMediaItem = document.querySelectorAll("[socialmedia-data]");
+const modalContainerSocialMedia = document.querySelector("[socialmedia-modal-container]");
+const modalCloseBtnSocialMedia = document.querySelector("[socialmedia-modal-close-btn]");
+const overlaySocialMedia = document.querySelector("[socialmedia-overlay]");
+
+const SocialMediaFunc = () => {
+  modalContainerSocialMedia.classList.toggle("active");
+  overlaySocialMedia.classList.toggle("active");
+};
+
+for (let i = 0; i < SocialMediaItem.length; i++) {
+  SocialMediaItem[i].addEventListener("click", () => {
+    SocialMediaFunc();
+  });
+}
+
+modalCloseBtnSocialMedia.addEventListener("click", SocialMediaFunc);
+overlaySocialMedia.addEventListener("click", SocialMediaFunc);
+
+
 
 
 // Contact
